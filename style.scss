@@ -1,0 +1,54 @@
+@import "config";
+@import "home";
+@import "menu";
+
+body {
+  background-color: $primary-color;
+  color: $text-color;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: map-get($font-weights, regular);
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding-top: 2rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+
+  .social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+
+    a {
+      padding: 0.5rem;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}

@@ -1,0 +1,28 @@
+$media-md: 768px;
+
+@media all and (min-width: $media-md) {
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+
+    .menu-nav {
+      transform: translateY(0);
+      height: inherit;
+      flex-direction: row;
+      justify-content: flex-end;
+      background-color: transparent;
+      padding: 2rem;
+
+      &__item {
+        transform: translateX(0);
+      }
+
+      &__link {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

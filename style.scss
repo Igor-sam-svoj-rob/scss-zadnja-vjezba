@@ -1,6 +1,4 @@
-@import "config";
-@import "home";
-@import "menu";
+@import "config", "home", "menu", "responsive", "about", "projects";
 
 body {
   background-color: $primary-color;

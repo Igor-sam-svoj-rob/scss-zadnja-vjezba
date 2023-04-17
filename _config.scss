@@ -13,3 +13,7 @@ $font-weights: (
   margin: 0;
   box-sizing: border-box;
 }
+
+%transition-ease {
+  transition: all 0.5s ease-in-out;
+}
